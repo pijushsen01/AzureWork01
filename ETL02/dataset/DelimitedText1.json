@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "InputEmp.csv",
 				"container": "pijushcont1"
 			},
 			"columnDelimiter": ",",
