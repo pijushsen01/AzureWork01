@@ -72,8 +72,7 @@
 				]
 			},
 			{
-				"name": "ETL",
-				"description": "Databricks Notebook activity does the processing of the data copied in the previous step (copy activity).  Please ensure you have added the databricks notebook (<a href='https://adflabstaging1.blob.core.windows.net/share/Transformations.html' target='_blank'>https://adflabstaging1.blob.core.windows.net/share/Transformations.html</a>) in the databricks work-space and referenced it in the notebook activity in ADF.",
+				"name": "Notebook1",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
@@ -92,25 +91,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Shared/Transformations",
-					"baseParameters": {
-						"input": {
-							"value": "@pipeline().parameters.inputPath",
-							"type": "Expression"
-						},
-						"output": {
-							"value": "@pipeline().parameters.outputPath",
-							"type": "Expression"
-						},
-						"filename": {
-							"value": "@pipeline().parameters.fileName",
-							"type": "Expression"
-						},
-						"pipelineRunId": {
-							"value": "@pipeline().RunId",
-							"type": "Expression"
-						}
-					}
+					"notebookPath": "/FileStore/tables/InputEmp.csv"
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureDatabricks2",
