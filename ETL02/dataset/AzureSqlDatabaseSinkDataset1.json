@@ -8,18 +8,25 @@
 		},
 		"parameters": {
 			"sinkTableName": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "Emp"
 			}
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "_c0",
+				"type": "nvarchar"
+			},
+			{
+				"name": "_c1",
+				"type": "nvarchar"
+			}
+		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": {
-				"value": "@dataset().sinkTableName",
-				"type": "Expression"
-			}
+			"table": "Emp"
 		}
 	}
 }
