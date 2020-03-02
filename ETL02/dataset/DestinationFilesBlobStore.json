@@ -1,0 +1,16 @@
+{
+	"name": "DestinationFilesBlobStore",
+	"properties": {
+		"description": "Connection to your destination Azure Blob Store.",
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "",
+			"folderPath": "sinkdata/staged_sink"
+		}
+	}
+}
