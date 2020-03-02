@@ -9,8 +9,8 @@
 		"annotations": [],
 		"type": "AzureBlob",
 		"typeProperties": {
-			"fileName": "Product.csv",
-			"folderPath": "data/source"
+			"fileName": "",
+			"folderPath": "pijushcont1"
 		}
 	}
 }
