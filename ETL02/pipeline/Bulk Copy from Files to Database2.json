@@ -33,13 +33,21 @@
 				"inputs": [
 					{
 						"referenceName": "SourceDataset3",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"fileName": "InputEmp.csv",
+							"SourceContainer": "pijushcon1",
+							"SourceDirectory": "pijushblob"
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "AzureSqlDatabaseSinkDataset",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"sinkTableName": "Sales1"
+						}
 					}
 				]
 			}
