@@ -1,0 +1,28 @@
+{
+	"name": "ETL Using Python",
+	"properties": {
+		"activities": [
+			{
+				"name": "ETL Python",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/pijush.sen@kpmg.co.uk/mynotebook03"
+				},
+				"linkedServiceName": {
+					"referenceName": "DataBrkPython",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
